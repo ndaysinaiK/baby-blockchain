@@ -14,7 +14,7 @@ import (
 )
 
 func HomeLink(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, " babay blockchain API")
+	fmt.Fprintf(w, " baby blockchain API")
 }
 
 func handleGetBlockchain(w http.ResponseWriter, r *http.Request) {

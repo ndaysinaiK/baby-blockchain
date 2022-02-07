@@ -29,7 +29,7 @@ function Body() {
 
         setState(false)
         const postMe = JSON.stringify({from:sender, to:receiver, amount:Number(amount)})
-        await axios.post(`http://localhost:3002/api/sendtransaction`,postMe).then((res)=>{
+        await axios.post(`https://bch-simple.herokuapp.com/api/sendtransaction`,postMe).then((res)=>{
     
         
           toast.info(`Sent successfully`, {position:toast.POSITION.TOP_RIGHT});

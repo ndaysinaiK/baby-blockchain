@@ -19,7 +19,7 @@ function Blockcard({reload}) {
     const FetchBlocks=async()=>{
 
         setLoading(true)
-        await axios.get(`http://localhost:3002/api/getblockchain`).then((res)=>{
+        await axios.get(`https://bch-simple.herokuapp.com/api/getblockchain`).then((res)=>{
             setdata(res?.data)
             setLoading(false)
         }).catch((error)=>{
