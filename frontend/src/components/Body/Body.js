@@ -30,7 +30,7 @@ function Body() {
     else {
 
         setState(false)
-        
+
         const postMe = JSON.stringify({from:sender, to:receiver, amount:Number(amount)})
 
         await axios.post(apiBaseUrl+'/api/sendtransaction',postMe).then((res)=>{
@@ -54,7 +54,7 @@ function Body() {
     <div className='dark:bg-slate-900'>
         
         <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
-        <h1 className="text-gray-600 text-3xl mt-4 mb-5 text-gradient dark:text-white">WALLET FORM</h1>
+        <h1 className="text-gray-600 text-3xl mt-2 mb-5 text-gradient dark:text-white">WALLET FORM</h1>
           
           <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism bg-slate-50 dark:bg-slate-900 shadow-sm">
 
