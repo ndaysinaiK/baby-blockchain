@@ -1,5 +1,9 @@
 # Let's build a blockchain from scratch together!
 
+
+![image](https://user-images.githubusercontent.com/74330893/152830124-38b35990-8839-474f-a5c8-eb4e0b687984.png)
+
+
 ## Website 
 
 https://open-blockchain-project.com/ 
