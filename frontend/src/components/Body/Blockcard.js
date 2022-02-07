@@ -35,7 +35,13 @@ function Blockcard({reload}) {
     
   return (
 
-    <div className='flex align-center justify-center p-6'>
+    <div className='flex flex-col align-center justify-center p-6'>
+
+        <div className='flex items-center justify-center h-10'>
+
+            {!loading&&<p className='dark:text-white'><img src={loader} width='100px' /> <b className='flex items-center justify-center'>Loading .....</b></p>}
+
+        </div>
 
  
         <div className="grid-cols-1 grid sm:grid-cols-4 grid-flow-row-dense gap-4 ">
