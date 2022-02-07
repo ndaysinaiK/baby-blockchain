@@ -43,7 +43,13 @@ This is an opensource blockchain project that aims to solve some blockchain issu
 - go to http://localhost:3002 to see your app running, test and improve it
 
 
+### This project is an improvement of this article https://medium.com/swlh/is-it-hard-to-build-a-blockchain-from-scratch-2662e9b873b7
+
+You can read it for basic understanding.
+
+
 ## Any contribution will be appreciated
+
 
 
 
