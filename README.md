@@ -10,10 +10,10 @@ This is an opensource blockchain project, feel free to contribute 😊
 -baby-blockchain
 
   - baby-blockchain
-      - AddNet
-      - AddPersistence
-      - AddPoS
-      - Simple
+      - AddNet : add decentralization and fault tolerance 
+      - AddPersistence : data persistence 
+      - AddPoS : concensus algorithm
+      - Simple : First and Simple implementation 
 
   - frontend : Reactjs frontend App
 
@@ -31,6 +31,11 @@ This is an opensource blockchain project, feel free to contribute 😊
 - cd baby-blockchain/baby-blockchain/Simple : for the first implementation
 - go build
 - ./blockchain : this will run the app on port 3002
+
+
+## Any contribution will be appreciated
+
+
 
 
 
