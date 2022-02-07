@@ -1,8 +1,8 @@
-# Let's solve the blockchain TRILEMMA TOGETHER
+# Let's build a blockchain from scratch together!
 
 ## Into
 
-This is an opensource blockchain project, feel free to contribute 😊
+This is an opensource blockchain project that aims to solve some blockchain issues, feel free to contribute 😊
 
 
 ## Folder Structure
@@ -31,6 +31,8 @@ This is an opensource blockchain project, feel free to contribute 😊
 - cd baby-blockchain/baby-blockchain/Simple : for the first implementation
 - go build
 - ./blockchain : this will run the app on port 3002
+- open the frontend folder, search for https://bch-simple.herokuapp.com in Utils/Apis.js and replace it with http://localhost:3002
+- go to http://localhost:3002 to see your app running, test and improve it
 
 
 ## Any contribution will be appreciated
