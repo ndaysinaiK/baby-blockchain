@@ -9,11 +9,14 @@ function Blockcard({reload}) {
     const [data, setdata] =useState([])
     const [loading, setLoading]=useState(false)
 
-
     useEffect(() => {
-    const clearme = FetchBlocks()
-    return clearme
-    
+
+        if (reload){
+            const clearme = FetchBlocks()
+            return clearme
+        
+        }
+   
     }, [reload]);
 
 
@@ -39,7 +42,7 @@ function Blockcard({reload}) {
 
         <div className='flex items-center justify-center h-5'>
 
-            {loading&&<p className='dark:text-white'><img src={loader} width='100px' loading='lazy'/> <b className='flex items-center justify-center'>Loading .....</b></p>}
+            {loading&&<p className='dark:text-white'><b className='flex items-center justify-center'>Loading .....</b></p>}
 
         </div>
 

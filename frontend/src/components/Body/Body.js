@@ -8,14 +8,14 @@ import { apiBaseUrl } from '../../Utils/Apis';
 
 function Body() {
 
-  const [state, setState]=useState(true)
+  const [stateLoad, setStateLoad]=useState(true)
 
   const [sender, setSender]=useState('')
   const [receiver, setReceiver]=useState('')
   const [amount, setAmount]=useState(0)
   
 
-  const NewTx = async (e) =>{
+  const NewTx = async () =>{
 
     if(sender==='' && receiver==='' && amount==='') {
 
@@ -29,7 +29,7 @@ function Body() {
 
     else {
 
-        setState(false)
+        setStateLoad(false)
 
         const postMe = JSON.stringify({from:sender, to:receiver, amount:Number(amount)})
 
@@ -37,11 +37,13 @@ function Body() {
     
         
           toast.info(`Sent successfully`, {position:toast.POSITION.TOP_RIGHT});
-          setState(true)
+
+          setStateLoad(true)
         
         }).catch((error)=>{
       
             toast.error(`error occured: ${error}`, {position:toast.POSITION.TOP_RIGHT});
+            setStateLoad(false)
       
         })
       
@@ -88,11 +90,11 @@ function Body() {
         
         <div className='txresult flex align-center justify-center w-full mb-10 h-2 dark:text-gray-400'>
 
-          {!state&&<span><img src={loader} className="h-24 -mt-8"/></span>}
+          {!stateLoad&&<span>Processing ...</span>}
 
         </div>
 
-        <Blockcard reload={state}/>
+        <Blockcard reload={stateLoad}/>
 
     </div>
   );
