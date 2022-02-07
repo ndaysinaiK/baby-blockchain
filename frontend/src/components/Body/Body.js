@@ -30,7 +30,9 @@ function Body() {
     else {
 
         setState(false)
+        
         const postMe = JSON.stringify({from:sender, to:receiver, amount:Number(amount)})
+
         await axios.post(apiBaseUrl+'/api/sendtransaction',postMe).then((res)=>{
     
         
