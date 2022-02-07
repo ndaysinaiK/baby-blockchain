@@ -25,7 +25,7 @@ func main() {
 	go func() {
 		t := time.Now()
 		genesisBlock := Block{}
-		genesisBlock = Block{0, t.String(), Transactions{"Genesis ", "Sinai", 20000000000000}, calculateHash(genesisBlock), ""}
+		genesisBlock = Block{0, t.String(), Transactions{"Baby Genesis ", "Sinai", 20000000000000}, calculateHash(genesisBlock), ""}
 		spew.Dump(genesisBlock)
 
 		mutex.Lock()
