@@ -42,12 +42,16 @@ const Navbar = () => {
                 <a href="#" className="py-5 px-3 text-gray-700 hover:text-gray-900 dark:text-white">PoS</a>
                 <a href="#" className="py-5 px-3 text-gray-700 hover:text-gray-900 dark:text-white">Persistence</a>
                 <a href="#" className="py-5 px-3 text-gray-700 hover:text-gray-900 dark:text-white">Networking</a>
+
+                <a href="https://github.com/ndaysinaiK/baby-blockchain" target="_blank" className="py-5 px-3 text-gray-700 hover:text-gray-900 dark:text-white">Github</a>
+
+     
                 </div>
             </div>
 
             <div className="hidden md:flex items-center space-x-1">
-                <a href="" className="py-5 px-3 dark:text-white">Login</a>
-                <a href="" className="py-2 px-3 bg-[#3d4f7c]  hover:bg-gray-600 text-white hover:text-white rounded transition duration-300">Signup</a>
+                <a href="#" className="py-5 px-3 dark:text-white">Login</a>
+                <a href="#" className="py-2 px-3 bg-[#3d4f7c]  hover:bg-gray-600 text-white hover:text-white rounded transition duration-300">Signup</a>
                 <a className='pl-5'><Toggle/></a>
             </div>
 
@@ -68,8 +72,10 @@ const Navbar = () => {
             <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-[#0d121f] dark:text-white">PoS</a>
             <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-[#0d121f] dark:text-white">Persistence</a>
             <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-[#0d121f] dark:text-white">Networking</a>
-            <a href="" className="block py-2 px-4 text-sm hover:bg-gray-200  dark:hover:bg-[#0d121f] dark:text-white">Login</a>
-            <a href="" className=" block py-2 m-4 px-4 text-sm  dark:text-white bg-[#576b9c]  hover:bg-gray-600 text-white hover:text-white rounded transition duration-300">Signup</a>
+            <a href="https://github.com/ndaysinaiK/baby-blockchain" target="_blank" className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-[#0d121f] dark:text-white">Github</a>
+            <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200  dark:hover:bg-[#0d121f] dark:text-white">Login</a>
+            <a className='block py-2 px-4 text-sm'><Toggle/></a>
+            <a href="#" className=" block py-2 m-4 px-4 text-sm  dark:text-white bg-[#576b9c]  hover:bg-gray-600 text-white hover:text-white rounded transition duration-300">Signup</a>
         </div>
         </nav>
 
