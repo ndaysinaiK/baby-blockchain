@@ -4,7 +4,7 @@
 
 https://open-blockchain-project.com/ 
 
-## Into
+## Intro
 
 This is an opensource blockchain project that aims to solve some blockchain issues, feel free to contribute 😊
 
