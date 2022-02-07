@@ -39,7 +39,7 @@ function Blockcard({reload}) {
 
         <div className='flex items-center justify-center h-10'>
 
-            {!loading&&<p className='dark:text-white'><img src={loader} width='100px' /> <b className='flex items-center justify-center'>Loading .....</b></p>}
+            {loading&&<p className='dark:text-white'><img src={loader} width='100px' /> <b className='flex items-center justify-center'>Loading .....</b></p>}
 
         </div>
 
