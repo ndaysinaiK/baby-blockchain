@@ -17,11 +17,11 @@ function Body() {
 
     if(sender==='' && receiver==='' && amount==='') {
 
-      toast.error(`Please fill out all the form`, {position:toast.POSITION.TOP_RIGHT});
+      toast.error(`Please fill out all the fields`, {position:toast.POSITION.TOP_RIGHT});
 
     }else if (sender==='' || receiver==='' || amount===''){
 
-      toast.error(`Please fill out all the form`, {position:toast.POSITION.TOP_RIGHT});
+      toast.error(`Please fill out all the fields`, {position:toast.POSITION.TOP_RIGHT});
 
     }
 
