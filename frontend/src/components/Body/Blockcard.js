@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import loader from '../../assets/loader.gif'
+import { apiBaseUrl } from '../../Utils/Apis';
 
 function Blockcard({reload}) {
 
@@ -19,7 +20,7 @@ function Blockcard({reload}) {
     const FetchBlocks=async()=>{
 
         setLoading(true)
-        await axios.get(`https://bch-simple.herokuapp.com/api/getblockchain`).then((res)=>{
+        await axios.get(apiBaseUrl+'/api/getblockchain').then((res)=>{
             setdata(res?.data)
             setLoading(false)
         }).catch((error)=>{

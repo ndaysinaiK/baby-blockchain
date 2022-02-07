@@ -4,6 +4,8 @@ import loader from '../../assets/loader.gif'
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
+import { apiBaseUrl } from '../../Utils/Apis';
+
 function Body() {
 
   const [state, setState]=useState(true)
@@ -29,7 +31,7 @@ function Body() {
 
         setState(false)
         const postMe = JSON.stringify({from:sender, to:receiver, amount:Number(amount)})
-        await axios.post(`https://bch-simple.herokuapp.com/api/sendtransaction`,postMe).then((res)=>{
+        await axios.post(apiBaseUrl+'/api/sendtransaction',postMe).then((res)=>{
     
         
           toast.info(`Sent successfully`, {position:toast.POSITION.TOP_RIGHT});
