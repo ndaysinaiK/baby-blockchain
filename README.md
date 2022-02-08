@@ -51,7 +51,7 @@ You can read it for basic understanding.
 
 ## Any contribution will be appreciated
 
-Fork the repo, pull requests to contribute to this project
+Fork the repo, pull requests to contribute to this project.
 
 
 
