@@ -20,8 +20,8 @@ This is an opensource blockchain project that aims to solve some blockchain issu
   - baby-blockchain
       - AddNet : add decentralization and fault tolerance 
       - AddPersistence : data persistence 
-      - AddPoS : concensus algorithm
-      - Simple : First and Simple implementation 
+      - AddPoS : Proof of Stake concensus algorithm
+      - Simple : First and Simple implementation (No data persistence: Data disapears after reload)
 
   - frontend : Reactjs frontend App
 
