@@ -10,7 +10,7 @@ https://open-blockchain-project.com/
 
 ## Intro
 
-This is an opensource blockchain project that aims to solve some blockchain issues, feel free to contribute 😊
+This is an opensource blockchain prototype project that aims to solve some blockchain issues using simple methods, feel free to contribute 😊
 
 
 ## Folder Structure
