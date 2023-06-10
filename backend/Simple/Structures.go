@@ -14,4 +14,4 @@ type Transactions struct {
 	Amount int    `json:"amount"`
 }
 
-var globalBlockchain []Block
+var Blockchain []Block

@@ -18,7 +18,7 @@ func HomeLink(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleGetBlockchain(w http.ResponseWriter, r *http.Request) {
-	bytes, err := json.MarshalIndent(globalBlockchain, "", "  ")
+	bytes, err := json.MarshalIndent(Blockchain, "", "  ")
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
@@ -38,13 +38,13 @@ func handleWriteBlock(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
 	mutex.Lock()
-	prevBlock := globalBlockchain[len(globalBlockchain)-1]
+	prevBlock := Blockchain[len(Blockchain)-1]
 	alltx := Transactions{Tx.From, Tx.To, Tx.Amount}
 	newBlock := generateBlock(prevBlock, alltx)
 
 	if isBlockValid(newBlock, prevBlock) {
-		globalBlockchain = append(globalBlockchain, newBlock)
-		spew.Dump(globalBlockchain)
+		Blockchain = append(Blockchain, newBlock)
+		spew.Dump(Blockchain)
 	}
 	mutex.Unlock()
 
