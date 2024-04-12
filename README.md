@@ -54,6 +54,10 @@ You can read it for basic understanding.
 
 Fork the repo, pull requests to contribute to this project.
 
+## support with coffee
+
+https://www.buymeacoffee.com/nksinai ☕
+
 
 
 
