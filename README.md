@@ -58,6 +58,10 @@ Fork the repo, pull requests to contribute to this project.
 
 https://www.buymeacoffee.com/nksinai ☕
 
+##paypal 
+
+https://ko-fi.com/nksinai 
+
 
 
 
